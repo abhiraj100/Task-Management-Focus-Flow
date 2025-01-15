@@ -12,7 +12,7 @@ const CompletedTasks = () => {
   useEffect(() => {
     const fetch = async () => {
       const response = await axios.get(
-        "http://localhost:3300/api/v2/get-complete-tasks",
+        "https://task-management-focus-flow.onrender.com/api/v2/get-complete-tasks",
         { headers }
       );
       // console.log(response);

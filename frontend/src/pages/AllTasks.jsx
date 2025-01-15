@@ -20,7 +20,7 @@ const AllTasks = () => {
   useEffect(() => {
     const fetch = async () => {
       const response = await axios.get(
-        "http://localhost:3300/api/v2/get-all-tasks",
+        "https://task-management-focus-flow.onrender.com/api/v2/get-all-tasks",
         { headers }
       );
       // console.log(response);

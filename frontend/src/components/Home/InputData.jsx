@@ -28,7 +28,7 @@ const InputData = ({ inputDiv, setInputDiv, updatedData, setUpdatedData }) => {
     if (Data.title === "" || Data.desc === "") {
       alert("All fields are required");
     } else {
-      await axios.post("http://localhost:3300/api/v2/create-task", Data, {
+      await axios.post("https://task-management-focus-flow.onrender.com/api/v2/create-task", Data, {
         headers,
       });
       setInputDiv("hidden");
@@ -42,7 +42,7 @@ const InputData = ({ inputDiv, setInputDiv, updatedData, setUpdatedData }) => {
     if (Data.title === "" || Data.desc === "") {
       alert("All fields are required");
     } else {
-      await axios.put(`http://localhost:3300/api/v2/update-task/${updatedData.id}`, Data, {
+      await axios.put(`https://task-management-focus-flow.onrender.com/api/v2/update-task/${updatedData.id}`, Data, {
         headers,
       });
       setUpdatedData({ id: "", title: "", desc: "" });

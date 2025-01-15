@@ -12,7 +12,7 @@ const InCompletedTasks = () => {
   useEffect(() => {
     const fetch = async () => {
       const response = await axios.get(
-        "http://localhost:3300/api/v2/get-incomplete-tasks",
+        "https://task-management-focus-flow.onrender.com/api/v2/get-incomplete-tasks",
         { headers }
       );
       // console.log(response);

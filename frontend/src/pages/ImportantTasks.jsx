@@ -12,7 +12,7 @@ const ImportantTasks = () => {
   useEffect(() => {
     const fetch = async () => {
       const response = await axios.get(
-        "http://localhost:3300/api/v2/get-imp-tasks",
+        "https://task-management-focus-flow.onrender.com/api/v2/get-imp-tasks",
         { headers }
       );
       // console.log(response);
